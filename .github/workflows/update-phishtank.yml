@@ -2,13 +2,15 @@ name: Update PhishTank Dataset
 
 on:
   schedule:
-    - cron: '0 */12 * * *'   # every 12 hours
+    - cron: '0 */12 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update-dataset:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4

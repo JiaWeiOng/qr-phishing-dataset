@@ -1,7 +1,7 @@
 import pandas as pd
 from pathlib import Path
 
-feed_url = "http://data.phishtank.com/data/online-valid.csv.gz"
+feed_url = "https://data.phishtank.com/data/online-valid.csv.gz"
 output_dir = Path("data")
 output_dir.mkdir(exist_ok=True)
 
